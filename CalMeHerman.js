@@ -1,9 +1,9 @@
 //UDAH DI KASIH YANG NO ENC MASIH BELUM SUBSCRIBE? PARAH SI
 //HARGAI GUE APA SUSAH NYA KLIK TOMBOL SUBSCRIBE
-//KLIK TOMBOL SUBSCRIBE !!!! https://youtube.com/channel/UCPhU6uA_3gUaEvyrFZFgJqg
+//KLIK TOMBOL SUBSCRIBE !!!! https://youtube.com/channel/UCueojYUvg1lLgdoWeX82UMw
 //AWAS GA SUBSCRIBE TAR GUE GA UP SC LAGI NI
 //MAU GUE ENC?
-//KALO MAU YANG NO ENC TERUS KLIK TOMBOL SUBSCRIBE LAH https://youtube.com/channel/UCPhU6uA_3gUaEvyrFZFgJqg
+//KALO MAU YANG NO ENC TERUS KLIK TOMBOL SUBSCRIBE LAH https://youtube.com/channel/UCueojYUvg1lLgdoWeX82UMw
 const {
     WAConnection,
 	MessageType,
@@ -538,7 +538,7 @@ module.exports = dha = async (dha, mek) => {
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
         const troli =  {key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 300, status: 200, thumbnail: fakeimage, surface: 200, message: fake, orderTitle: 'dha', sellerJid: '0@s.whatsapp.net'} } }
         const ftext = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: { "extendedTextMessage": {"text": `*Hai ${pushname}👋*\n  ${moment().utcOffset('+0700').format('HH:mm:ss')} ${moment.tz('Asia/Jakarta').format('DD/MM/YYYY')}`,"title": `Hmm`,'jpegThumbnail': fs.readFileSync('./media/sherlynn.jpg')}}}
-        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/sherlynn.jpg`)},"title": `©KazuKi Chanel`,"description": "ItsMeBotz", "currencyCode": "IDR","priceAmount1000": "99999999","retailerId": "ItsMeBotz","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
+        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/sherlynn.jpg`)},"title": `©KazuKi Chanel`,"description": "KazuKi", "currencyCode": "IDR","priceAmount1000": "99999999","retailerId": "KazuKi","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
 
       // Anti link
         if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
@@ -851,9 +851,9 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ᱝ *Baterai :* ${baterai}% 
 
 ༒ *INFO BOT* ༒
-ᱝ *Nama : *ItsMeBotz*
-ᱝ *Nomor :* @6283146208804 (pembuat)
-ᱝ *Owner : *Herman* 
+ᱝ *Nama : *KazuKiBotz*
+ᱝ *Nomor :* @6283113989278 (pembuat)
+ᱝ *Owner : *KazuKi* 
 ᱝ *Aiktif :*  ${runtime(process.uptime())}
 ᱝ *Prefix :* 『> ${prefix} <』
 
@@ -871,14 +871,14 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ᱝ *User :* ${pushname}
 
 *Request fitur?* Ketik ${prefix}owner Ya!
-*Sewa bot?* Chat wa.me/6283146208804`
+*Sewa bot?* Chat wa.me/6283113989278`
                buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: 'SEMUAH FITUR😈'},type:1},{buttonId: `${prefix}vn`,buttonText:{displayText: 'MENU VN🗣️'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'SEDEKAH🤡'},type:1}]
 
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: 'ItsMeBotz', imageMessage: imageMsg,
+               footerText: 'KazuKi', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -896,7 +896,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
                buttonsMessage = {
                contentText: `${rolegtli}`,
-               footerText: 'ItsMeBotz', imageMessage: imageMsg,
+               footerText: 'KazuKi', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -914,7 +914,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
                buttonsMessage = {
                contentText: `${rolegtivd}`,
-               footerText: 'ItsMeBotz', imageMessage: imageMsg,
+               footerText: 'KazuKi', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -949,7 +949,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
-               const yy = {title: 'ItsMeBotz' + nombor++,
+               const yy = {title: 'KazuKi' + nombor++,
                     rows: [
                        {
                         title: `${listmenuu[startnum++]}`,
@@ -980,7 +980,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                    }
                         list.push(yy)
            }
-               listmsg(from, `${ucapanWaktu}`,   `Subscribe https://youtube.com/channel/UCPhU6uA_3gUaEvyrFZFgJqg`, list)
+               listmsg(from, `${ucapanWaktu}`,   `Subscribe https://youtube.com/channel/UCueojYUvg1lLgdoWeX82UMw`, list)
                break
 //------------------< Game >------------------- 
         case 'limitgame': 
@@ -1550,10 +1550,10 @@ break
 case 'bayar':
 gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
 teksnya = `*[ PAYMENT ]*
-*Gopay :* 083840290711
-*Dana :* 083146208804
-*Ovo :* 083146208804
-*[ Hêrmåñ ßð†z ]*`
+*Gopay :* 083113989278
+*Dana :* 082323341102
+*Ovo :* 083113989277
+*[ KazuKi ßð†z ]*`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
  
@@ -1561,7 +1561,7 @@ case 'buttonstik':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*「MENU STICKER」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-ItsMeBotz
+KazuKi
 
 *き⃟🦈 ${prefix}attp* _teks_
 *き⃟🦈 ${prefix}ttp* _teks_
@@ -1581,7 +1581,7 @@ ItsMeBotz
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*「DOWNLOAD MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-ItsMeBotz
+KazuKi
 
 *き⃟🦈 ${prefix}fbdl*
 *き⃟🦈 ${prefix}igdl*
@@ -1604,14 +1604,14 @@ case 'buttonpen':
               teksnya = `*「NULIS MENU」*
 *き⃟🦈 ${prefix}nulis*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-ItsMeBotz`
+KazuKi`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'buttongame':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*「GAME MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-ItsMeBotz
+KazuKi
 
 き⃟🦈 ${prefix}limitgame*
 *き⃟🦈 ${prefix}slot*
@@ -1672,7 +1672,7 @@ case 'buttonwibu':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*「WIBU MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-ItsMeBotz
+KazuKi
 
 *き⃟🦈 ${prefix}loli*
 *き⃟🦈 ${prefix}manga*
@@ -1704,7 +1704,7 @@ case 'buttonown':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*「OWNER MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-ItsMeBotz
+KazuKi
 
 *き⃟🦈️ ${prefix}bc* _teks_
 *き⃟🦈 ${prefix}tobc* _audio_
@@ -3437,7 +3437,7 @@ break
               textImg(`${runtime(process.uptime())}`)
               break
        case 'youtube': 
-              reply(`*Subcribe YT Owner :*\n https://youtube.com/channel/UCPhU6uA_3gUaEvyrFZFgJqg`)
+              reply(`*Subcribe YT Owner :*\n https://youtube.com/channel/UCueojYUvg1lLgdoWeX82UMw`)
               break
        case 'masukandata':
              reply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *©HermanBot*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/6283146208804`)
@@ -4481,7 +4481,7 @@ case 'quotesdilan':
 					break                            
 //------------------< Menunya Bang:v >-------------------
       case 'dana':
-             reply(`DANA : 083146208804\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+             reply(`DANA : 082323341102\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break
              case 'y':
              reply(`JANGAN MELANGGAR YA ANJG🗿`)
@@ -4490,10 +4490,10 @@ case 'quotesdilan':
              reply(`BISMILAH BACA YASIN BUAT YANG MENINGGAL EH BUAT YANG KELUAR MAKSUDNYA 🤭`)
              break
            case 'gopay':
-             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Goopay :* 083840290711\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
+             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Goopay :* 083113989278\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
              break  
          case 'pulsa':
-             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Pulsa :* 083146208804\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
+             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Pulsa :* 083113989278\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
              break              
       case 'infoig':
              reply(`Follow Instagram Owner Ya : https://instagram.com/cal_me_herman?utm_medium=copy_link`)
