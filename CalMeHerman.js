@@ -88,7 +88,7 @@ let setting = JSON.parse(fs.readFileSync('./setting.json'))
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 petik = '```'
-fake = '©KazuKiMd'//GANTI NAMA KAMU BEP
+fake = '©KazuKiBotz'//GANTI NAMA KAMU BEP
 ban =[]
 
 // Database
@@ -250,7 +250,7 @@ module.exports = dha = async (dha, mek) => {
         const gcount = setting.gcount
         
         const listmsg = (from, title, desc, list) => { // ngeread nya pake rowsId, jadi command nya ga keliatan
-            let po = dha.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "𝕾𝖎𝖑𝖆𝖍𝖐𝖆𝖓 𝕻𝖎𝖑𝖎𝖍 𝕯𝖎𝖘𝖓𝖎!","footerText": "KazuKiGans❤️","listType": "SINGLE_SELECT","sections": list}}, {})
+            let po = dha.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "𝕾𝖎𝖑𝖆𝖍𝖐𝖆𝖓 𝕻𝖎𝖑𝖎𝖍 𝕯𝖎𝖘𝖓𝖎!","footerText": "KazuKi Chanel❤️","listType": "SINGLE_SELECT","sections": list}}, {})
             return dha.relayWAMessage(po, {waitForAck: true})
         }
         
@@ -538,7 +538,7 @@ module.exports = dha = async (dha, mek) => {
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
         const troli =  {key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 300, status: 200, thumbnail: fakeimage, surface: 200, message: fake, orderTitle: 'dha', sellerJid: '0@s.whatsapp.net'} } }
         const ftext = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: { "extendedTextMessage": {"text": `*Hai ${pushname}👋*\n  ${moment().utcOffset('+0700').format('HH:mm:ss')} ${moment.tz('Asia/Jakarta').format('DD/MM/YYYY')}`,"title": `Hmm`,'jpegThumbnail': fs.readFileSync('./media/sherlynn.jpg')}}}
-        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/sherlynn.jpg`)},"title": `©Herman Chanel`,"description": "ItsMeBotz", "currencyCode": "IDR","priceAmount1000": "99999999","retailerId": "ItsMeBotz","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
+        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/sherlynn.jpg`)},"title": `©KazuKi Chanel`,"description": "ItsMeBotz", "currencyCode": "IDR","priceAmount1000": "99999999","retailerId": "ItsMeBotz","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
 
       // Anti link
         if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
@@ -851,9 +851,9 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ᱝ *Baterai :* ${baterai}% 
 
 ༒ *INFO BOT* ༒
-ᱝ *Nama : *KazuKiMd*
-ᱝ *Nomor :* @6283113989278 (pembuat)
-ᱝ *Owner : *KazuKiGans* 
+ᱝ *Nama : *ItsMeBotz*
+ᱝ *Nomor :* @6283146208804 (pembuat)
+ᱝ *Owner : *Herman* 
 ᱝ *Aiktif :*  ${runtime(process.uptime())}
 ᱝ *Prefix :* 『> ${prefix} <』
 
@@ -871,14 +871,14 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ᱝ *User :* ${pushname}
 
 *Request fitur?* Ketik ${prefix}owner Ya!
-*Sewa bot?* Chat wa.me/6283113989278`
+*Sewa bot?* Chat wa.me/6283146208804`
                buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: 'SEMUAH FITUR😈'},type:1},{buttonId: `${prefix}vn`,buttonText:{displayText: 'MENU VN🗣️'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'SEDEKAH🤡'},type:1}]
 
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: 'KazukiBotz', imageMessage: imageMsg,
+               footerText: 'ItsMeBotz', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -973,7 +973,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                     rows: [
                        {
                         title: `${listmenuu[startnum++]}`,
-                        footerText: 'case by KazuKiGans', imageMessage: imageMsg,
+                        footerText: 'case by Herman Chanel', imageMessage: imageMsg,
                         rowId: `${prefix}${x}`
                       }
                     ]
@@ -1509,10 +1509,10 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'sewabot':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*[ PRICE LIST ]*
-*Sewa Bot kazuKiBotz*
-*1 Hari :* 7K
-*1 Minggu :* 15K
-*1 Bulan :* 30K
+*Sewa Bot Hêrmåñ ßð†z*
+*1 Hari :* 2K
+*1 Minggu :* 10K
+*1 Bulan :* 20K
 *Minat untuk Sewa Bot?* Chat Owner!
 *Dengan cara, Ketik* ${prefix}owner *Ya!*`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: mek, caption: teksnya })
@@ -1550,10 +1550,10 @@ break
 case 'bayar':
 gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
 teksnya = `*[ PAYMENT ]*
-*Gopay :* 083113989278
-*Dana :* 082323341102
-*Ovo :* 083113989278
-*[ KazuKiBotz ]*`
+*Gopay :* 083840290711
+*Dana :* 083146208804
+*Ovo :* 083146208804
+*[ Hêrmåñ ßð†z ]*`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
  
@@ -1731,7 +1731,7 @@ ItsMeBotz
 case 'pricegtivd':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*Price Role GTIVD*
-*Link Grup :* https://chat.whatsapp.com/I2yoiNRMkJD8rzOFtD
+*Link Grup :* https://chat.whatsapp.com/I2yoiNRMkJD8rzOFtD2onA
 
 VIP       : *40 World Locks*
 Mod     : *70 World Locks*
@@ -1740,13 +1740,13 @@ Divine  : *200 World Locks*
 Owner  : *3 Diamond Locks*
 
 *Order Role? Chat Owner :*
-*iVend :* wa.me/6283113989278`
+*iVend :* wa.me/6283146208804`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'pricegtli':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `Welcome, Price Role GTLI*
-*Link Grup : https://chat.whatsapp.com/L9HTjy9FBJIBm3Sf
+*Link Grup : https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS1pE5
 
 *Not Unli Role :*
 Devil       : *50 World Locks*
@@ -1770,7 +1770,7 @@ C Role Not Unli : *300 World Locks*
 C Role Unli : *600 World Locks*
 
 *Order Role? Bisa pake Goopay!*
-*Chat Owner :* wa.me/6283113989278`
+*Chat Owner :* wa.me/6283146208804`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'pricegtfo':
@@ -1786,7 +1786,7 @@ Manager  : *4 Diamond Locks*
 Owner  : *7 Diamond Locks*
 
 *Order Role? Chat Owner :*
-*UFO GTFO :* wa.me/623113989278`
+*UFO GTFO :* wa.me/623146208804`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'ruleswave':
@@ -1811,7 +1811,7 @@ case 'ruleswave':
 *3HARI GA ON KICK!!*
 
 *ID Guild :* -
-*Minat Join? Chat* wa.me/683113989278
+*Minat Join? Chat* wa.me/683146208804
 #WAVEFOREVER!`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
@@ -2072,7 +2072,7 @@ case 'tiktok':
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
               buttons = [{buttonId: `${prefix}tiktoknowm ${q}`,buttonText:{displayText: `🎥 Video`},type:1},{buttonId:`${prefix}ttaudio ${q}`,buttonText:{displayText:'🎵 Mp3'},type:1}]
               imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
-              buttonsMessage = {footerText:'Jangan Lupa Subscribe Yt KazuKi\n Helpme tu 1k subscriber', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Jangan Lupa Subscribe Yt Zero YT7\n Helpme tu 1k subscriber', imageMessage: imageMsg,
               contentText:`Silahkan pilihan media yg mau di download kak:v`,buttons,headerType:4}
               prep = await dha.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               dha.relayWAMessage(prep)
@@ -3208,7 +3208,7 @@ break
               bokep = body.slice(1)
               const bo =['https://www.mediafire.com/download/8hnhjcf3pseubgy','https://www.mediafire.com/download/cty9phda3d1s62u','https://www.mediafire.com/download/8hnhjcf3pseubgy']
               const kep = bo[Math.floor(Math.random() * bo.length)]
-              dha.sendMessage(from, '*PERMINTAAN:* '+bokep+'\n*DOSA TANGGUNG PRIBADI*\n*NI BRO FREE BUAT KAMU DOWNLOAD SENDIRI:* '+ kep, text, { quoted: ftoko, caption: `NI BOKEP SAYA DAPAT DARI *©Bapak Elu* DOSA TANGGUNG SENDIRI🗿`})
+              dha.sendMessage(from, '*PERMINTAAN:* '+bokep+'\n*DOSA TANGGUNG PRIBADI*\n*NI BRO FREE BUAT KAMU DOWNLOAD SENDIRI:* '+ kep, text, { quoted: ftoko, caption: `NI BOKEP SAYA DAPAT DARI *©Herman Botz* DOSA TANGGUNG SENDIRI🗿`})
               break
                 case 'xnxx':
                     if (args.length == 0) return reply(`Contoh: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
@@ -3313,7 +3313,7 @@ res = await dha.prepareMessageFromContent(from,{
 "surface": "CATALOG",
 "orderTitle": "GUA GK NGERTI",
 "message":"entah lah gua nob",
-"sellerJid": "6283113989278@s.whatsapp.net",
+"sellerJid": "6288224859350@s.whatsapp.net",
 "token": "AR7i5IXXiMA6NjT0DxcwdcKxhXCy1rOrvlNJzqXPMr8PCg==",
 "totalAmount1000": "Rp 25.000.00",
 "totalCurrencyCode": "IDR",
@@ -3440,7 +3440,7 @@ break
               reply(`*Subcribe YT Owner :*\n https://youtube.com/channel/UCPhU6uA_3gUaEvyrFZFgJqg`)
               break
        case 'masukandata':
-             reply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *©KazuKiBotz*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/6283113989278`)
+             reply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *©HermanBot*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/6283146208804`)
               break
       case 'ping':
       case 'speed':
@@ -3680,7 +3680,7 @@ case 'getvn':
              for (let _ of anu) {
 dha.sendMessage(_.jid, 
 			{"contentText": `*「 Siaran HermanBot 」*\n#Ijin Siaran\n*Isi Pesan :* ${body.slice(4)}`,
-			"footerText": 'KazuKi ßð†z',
+			"footerText": 'Hêrmåñ ßð†z',
 			"buttons": [
 			{"buttonId": `${prefix}menu`,
 			"buttonText": {"displayText": "LIST MENU"
@@ -4225,7 +4225,7 @@ case 'caripesan':  //by ANU TEAM
               if (args.length < 1) return reply(`Ketik ${prefix}bugreport [fiturnya] [Error Nya Gimana]`) 
               teks = args.join(' ')
               reply('Terima Kasih Telah Melaporkan Bug Pada Owner, Jika Itu Sekedar Iseng Maka Akan Di Ban Oleh Bot!')
-              dha.sendMessage('6283113989278@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
+              dha.sendMessage('6285157740529@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
               break
        case 'readall':
               totalchat.map( async ({ jid }) => {
@@ -4481,7 +4481,7 @@ case 'quotesdilan':
 					break                            
 //------------------< Menunya Bang:v >-------------------
       case 'dana':
-             reply(`DANA : 082323341102\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+             reply(`DANA : 083146208804\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break
              case 'y':
              reply(`JANGAN MELANGGAR YA ANJG🗿`)
@@ -4493,13 +4493,13 @@ case 'quotesdilan':
              reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Goopay :* 083840290711\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
              break  
          case 'pulsa':
-             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Pulsa :* 083113989278\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
+             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Pulsa :* 083146208804\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
              break              
       case 'infoig':
-             reply(`Follow Instagram Owner Ya : https://instagram.com/jiplonk3dt2?utm_medium=copy_link`)
+             reply(`Follow Instagram Owner Ya : https://instagram.com/cal_me_herman?utm_medium=copy_link`)
              break
       case 'grupbot':
-             reply('https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS')
+             reply('https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS1pE5')
              break
       case 'ownermenu':
              dha.sendMessage(from, ownerMenu(prefix), MessageType.text, {quoted: troli})
@@ -4792,7 +4792,7 @@ reply('_' + err + '_\n\n' + js)
                   }
 
 
-       if (budy.includes(`@6283113989278`)) {
+       if (budy.includes(`@6283146208804`)) {
 const baby = fs.readFileSync('./sticker/ivend.webp');
 dha.sendMessage(from, baby, MessageType.sticker, {quoted: mek})
 
