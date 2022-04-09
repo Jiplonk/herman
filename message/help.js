@@ -222,15 +222,14 @@ KELEBIHAN BOTZ
 ▢ BOT NO PASARAN
 
 LIST HARGA SEWA BOTZ
-▢ PERHARI 2K
-▢ PERMINGGU 5K
-▢ PERBULAN 15K
-▢ PERMANEN 40K
+▢ PERHARI 5K
+▢ PERMINGGU 15K
+▢ PERBULAN 30K
+▢ 2BULAN 50K
 MINAT HIBUNGI OWNER
-wa.me/6283146208804
+wa.me/6283113989278
 
-KUMPUL DISNI BUAT PEMULA BOT
-https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS1pE5`
+
 }
 exports.infoMenu = (prefix) => {
 return `
@@ -429,7 +428,7 @@ return`
 
 `}
 exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount, sender, baterai) => {
-    return `━━━━━『DHA BOTZ』━━━━━
+    return `━━━━━『KAZUKI BOTZ』━━━━━
 
 𝗜𝗡𝗙𝗢 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔 𝗕𝗢𝗧
 ❏ NAMA : *${pushname}*
@@ -438,10 +437,10 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 ❏ LIMIT : *${isPremium ? 'Unlimited' : `${gcount}`}*
 
 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧
-❏ NAMA : *DHA BOTZ*
-❏ API : @6282288265627
+❏ NAMA : *KazuKiMd*
+❏ API : @6283113989278
 ❏ OWNER : *YUDHA PERDANA*
-❏ API : *@6282W87486762*
+❏ API : *@6283113989278*
 ❏ TOTAL HIT : *${cmhit.length}x HIT*
 ❏ AKTIF : *${runtime(process.uptime())}*
 ❏ BATERAI : *${baterai}%*
@@ -826,4 +825,4 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 *▢ ${prefix}memeindo*
 *▢ ${prefix}darkjoke*
 
-©𝑪𝒓𝒆𝒂𝒕𝒐𝒓 𝒃𝒚 𝒚𝒖𝒅𝒉𝒂 𝒑𝒆𝒓𝒅𝒂𝒏𝒂`}
+©𝑪𝒓𝒆𝒂𝒕𝒐𝒓 𝒃𝒚 KazuKiMd`}
