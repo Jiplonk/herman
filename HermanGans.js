@@ -23,10 +23,10 @@ const starts = async (dha = new WAConnection()) => {
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-	console.log(color('[ GO 1K SUBSCRIBE ]\n', 'yellow'), color('Subscribe KazuKi', 'yellow'))
+	console.log(color('[ GO 1K SUBSCRIBE ]\n', 'yellow'), color('Subscribe Herman Chanel', 'yellow'))
 	console.log(color('GA SUBSCRIBE BAKAL EROR:V', 'pink'))
-	console.log(color('\n\n[ FOLOW IG @jiplonk3dt2', 'red'))
-	dha.browserDescription = ["KazuKi", "Chrome", "3.0.0"];
+	console.log(color('\n\n[ FOLOW IG @cal_me_herman', 'red'))
+	dha.browserDescription = ["herman", "Chrome", "3.0.0"];
 
 	// Menunggu QR
 	dha.on('qr', () => {
@@ -36,7 +36,7 @@ const starts = async (dha = new WAConnection()) => {
 	// Menghubungkan
 	fs.existsSync(`./${setting.sessionName}.json`) && dha.loadAuthInfo(`./${setting.sessionName}.json`)
 	dha.on('connecting', () => {
-		console.log(color('[ KazuKi Chanel ]', 'yellow'), color('PROSES NYAMBUNG...'));
+		console.log(color('[ Herman Chanel ]', 'yellow'), color('PROSES NYAMBUNG...'));
 	})
 const spinner = { 
   "interval": 120,
@@ -78,18 +78,18 @@ const spinner = {
     "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS",
     "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS N",
     "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NG",
-    "KAZUKI CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGA",
-    "KAZUKI CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB",
-    "KAZUKI CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB B",
-    "KAZUKI CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB BS",
-    "KAZUKI CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB BSA",
-    "KAZUKI CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB BSA L",
-    "KAZUKI CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB BSA LH"
+    "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGA",
+    "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB",
+    "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB B",
+    "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB BS",
+    "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB BSA",
+    "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB BSA L",
+    "HERMAN CHANEL JAN LUPA SUBSCRIBE GO 1K SUBS NGAB BSA LH"
   ]}
 
 	//connect
 	dha.on('open', () => {
-		console.log(color('[ kazuki Chanel ]', 'yellow'), color('BOT SUDAH AKTIF'));
+		console.log(color('[ Herman Chanel ]', 'yellow'), color('BOT SUDAH AKTIF'));
 	})
 
 	// session
